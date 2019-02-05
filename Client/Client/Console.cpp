@@ -14,9 +14,9 @@ void cs_Initial(void)
 	stConsoleCursor.bVisible = FALSE;
 	stConsoleCursor.dwSize = 1;			// Cursor Size. 1 = invisible
 
-										//-------------------------------------------------------------
-										// Get Standard Console Handle
-										//-------------------------------------------------------------
+	//-------------------------------------------------------------
+	// Get Standard Console Handle
+	//-------------------------------------------------------------
 	g_hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleCursorInfo(g_hConsole, &stConsoleCursor);
 }
